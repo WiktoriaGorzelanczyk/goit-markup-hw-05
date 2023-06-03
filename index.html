@@ -26,7 +26,7 @@
             <nav class="menu-links">
                 <ul class="list">
                     <li>
-                        <a class="menu-link" href="./index.html">Agencja</a>
+                        <a class="menu-link link-active" href="./index.html">Agencja</a>
                     </li>
                     <li>
                         <a class="menu-link" href="./portfolio.html">Portfolio</a>
@@ -59,6 +59,10 @@
             <div class="container con-first">
                 <h1 class="main-first-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                 <button  class="button-primary" type="button">Zamów usługę</button>
+                <div class="backdrop hidden" data-modal>
+                    <button class="icon-modal-close" data-modal-close>X</button>
+                </div>
+                </div>
             </div>
             </section>
             <section class="section descriptions">
@@ -134,6 +138,7 @@
                       height="293"
                       alt="Ktoś pisze program na komputerze, korzystając z pomocy tableta i schematu na kartce."
                     />
+                    <p class="work-desc">APLIKACJE KOMPUTEROWE</p>
                     </li>
                     <li class="work-images">
                     <img 
@@ -142,6 +147,7 @@
                     height="293"
                     alt="Ktoś zastanawia się nad wyborem wyglądu aplikacji na urządzeniach mobilnych."
                     />
+                    <p class="work-desc">APLIKACJE MOBILNE</p>
                     </li>
                     <li class="work-images">
                     <img 
@@ -150,6 +156,7 @@
                     height="293"
                     alt="Wyświetlona jest tabela kolorów na tablecie."
                     />
+                    <p class="work-desc">ROZWIĄZANIA GRAFICZNE</p>
                     </li>
                     </ul>
             </div>
@@ -399,5 +406,6 @@
         </div>
         </div>
         </footer>
+        <script src="./modal.js"></script>
     </body>
 </html>
