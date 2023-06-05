@@ -65,7 +65,7 @@ h1 {
     line-height: 1.36;
     letter-spacing: 0.03em;
 }
-.container-first {
+.con-first {
     padding-top: 200px;
     padding-bottom: 280px;
     max-width: 696px;
@@ -318,7 +318,6 @@ p {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-
 }
 .title {
     color: #2196F3;
@@ -386,13 +385,21 @@ li {
     column-gap: 93px;
 }
 .menu {
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .list {
     display: flex;
     column-gap: 46px;
     list-style-type: none;
+}
+.list .active:active {
+    color: #2196F3;
+}
+.list .link-active {
+    color: var(--brand-color-blue);
 }
 .desc-list {
     list-style-type: none;
@@ -477,6 +484,9 @@ li {
     align-items: center;
     justify-content: center;
     padding: 9px;
+    transition-property: fill, background-color, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 .com-link-footer:hover,
 .com-link-footer:focus {
@@ -512,15 +522,15 @@ li {
     padding: 6px;
     margin: 8px;
     position: absolute;
-    color: var(--brand-color-black);
+    color: #212121;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--brand-color-white);
+    background-color: #FFFFFF;
   }
 .icon-modal-close:hover {
     cursor: pointer;
-    color: var(--brand-color-blue);
-    border-color: var(--brand-color-blue);
+    color: #2196F3;
+    border-color: #2196F3;
 }
 .is-hidden {
     pointer-events: none;
@@ -546,6 +556,9 @@ li {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition-property: fill, background-color, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .com-links:hover,
 .com-links:focus {
@@ -573,10 +586,14 @@ li {
     height: 581px;
     top: 221px;
     border-radius: 4px;
-    background-color: var(--brand-color-white);
+    background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
       0 1px 3px 0 rgba(0, 0, 0, 0.12);
     transition: 1s ease-in-out;
+}
+.work-images {
+    display: flex;
+    position: relative;
 }
 .work-images > .work-desc {
     position: absolute;
@@ -587,6 +604,10 @@ li {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
+    padding: 27px;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 .overlay {
     position: absolute;
