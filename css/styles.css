@@ -577,7 +577,7 @@ li {
     background-color: rgba(0, 0, 0, 0.2);
 }
 .list .link-active {
-    color: var(--brand-color-blue);
+    color: #2196F3;
 }
 .modal {
     position: absolute;
