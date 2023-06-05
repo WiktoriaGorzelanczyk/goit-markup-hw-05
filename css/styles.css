@@ -219,8 +219,9 @@ p {
     content: "";
     position: absolute;
     background: #2196F3;
+    color: #2196F3;
     border-radius: 2px;
-    width: 100%;
+    width: 53px;
     height: 4px;
     margin-top: 28px;
     display: block;
