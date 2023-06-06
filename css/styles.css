@@ -10,6 +10,7 @@ body {
     font-family: Roboto, sans-serif;
     color: black;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
 .button-primary:hover ,
 .button-primary:active {
@@ -76,8 +77,7 @@ h1 {
 .buttons:hover ,
 .buttons:active,
 .buttons:focus {
-    cursor: pointer;
-    background: #2196F3;
+    background-color: #2196F3;
     color: #FFFFFF;
     box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -115,7 +115,7 @@ button {
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
-    transition-property: color, background-color;
+    transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -223,8 +223,8 @@ p {
     border-radius: 2px;
     width: 100%;
     height: 4px;
-    margin-top: 28px;
-    display: block;
+    bottom: 1px;
+    left: 0;
 }
 .portfolio-images {
     display: block;
@@ -246,6 +246,7 @@ p {
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
+    margin-bottom: 9px;
 }
 .links {
     color:#FFFFFF99;
@@ -254,6 +255,7 @@ p {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
 .links:hover,
 .links:active,
@@ -284,7 +286,7 @@ p {
     letter-spacing: 0.02em;
     line-height: 1.17;
     display: flex;
-    transition-property: color, fill;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -306,7 +308,6 @@ p {
 .portfolio-images:hover .overlay,
 .portfolio-images:focus .overlay {
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top-title {
     color: #2196F3;
@@ -341,10 +342,6 @@ p {
     font-family: Raleway;
     text-decoration: none;
 }
-li {
-    letter-spacing: 0.03em;
-    margin-bottom: 9px;
-}
 .button-primary {
     line-height: 1.87;
     font-size: 16px;
@@ -364,7 +361,6 @@ li {
     line-height: 1.15;
     padding-top: 32px;
     padding-bottom: 32px;
-    position: relative;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -401,6 +397,7 @@ li {
 }
 .list .link-active {
     color: #2196F3;
+    position: relative;
 }
 .desc-list {
     list-style-type: none;
@@ -448,17 +445,13 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: border-color, fill;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 .clients-link:hover,
 .clients-link:focus {
     color: #2196F3;
-}
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: #2196F3;
 }
 .join-us {
     margin-left: 70px;
@@ -537,7 +530,6 @@ li {
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
-    transition: 1s ease-out;
 }
 .is-hidden .modal {
     transform: scale(0);
@@ -557,7 +549,7 @@ li {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition-property: fill, background-color, border-radius;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -568,24 +560,23 @@ li {
 }
 .backdrop {
     position: absolute;
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    transition-property: hidden 0;
 }
 .list .link-active {
     color: #2196F3;
 }
 .modal {
     position: absolute;
-    display: flex;
-    justify-content: center;
     width: 528px;
     height: 581px;
-    top: 221px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -593,7 +584,6 @@ li {
     transition: 1s ease-in-out;
 }
 .work-images {
-    display: flex;
     position: relative;
 }
 .work-images > .work-desc {
@@ -604,11 +594,12 @@ li {
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-align: center;
-    padding: 27px;
-    right: 0;
-    left: 0;
     bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .overlay {
     position: absolute;
@@ -617,6 +608,7 @@ li {
     top: 0;
     left: 0;
     transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay p {
     font-size: 18px;
