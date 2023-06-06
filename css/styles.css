@@ -246,7 +246,6 @@ p {
     letter-spacing: 0.03em;
     font-size: 14px;
     line-height: 1.71;
-    margin-bottom: 9px;
 }
 .links {
     color:#FFFFFF99;
@@ -255,7 +254,6 @@ p {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom: 9px;
 }
 .links:hover,
 .links:active,
@@ -615,4 +613,7 @@ p {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(33, 150, 243, 0.9);
     padding: 55px 45px 49px 24px;
+}
+.contact {
+    margin-bottom: 9px;
 }
