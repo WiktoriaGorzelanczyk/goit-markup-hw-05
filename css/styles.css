@@ -523,8 +523,6 @@ p {
   }
 .icon-modal-close:hover {
     cursor: pointer;
-    color: #2196F3;
-    border-color: #2196F3;
 }
 .is-hidden {
     pointer-events: none;
